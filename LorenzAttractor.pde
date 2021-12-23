@@ -41,6 +41,7 @@ void draw() {
   beginShape();
   for (PVector v : points) {
     stroke(hue,255,255);
+    strokeWeight(0.1);
     vertex(v.x, v.y, v.z);
     rotateZ(-0.01);
     hue += 0.1;
